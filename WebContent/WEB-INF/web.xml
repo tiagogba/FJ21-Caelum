@@ -10,6 +10,19 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   
+  <filter>
+      <filter-name>
+          cronometro
+      </filter-name>
+  <filter-class>
+      br.com.caelum.agenda.filtro.FiltroTempoDeExecucao
+  </filter-class>
+  </filter>
+ <filter-mapping>
+     <filter-name>cronometro</filter-name>
+     <url-pattern>/*</url-pattern>
+ </filter-mapping>
+  
    <servlet>
         <servlet-name>servletOiMundo</servlet-name>
         <servlet-class>
@@ -55,6 +68,7 @@
        <servlet-name>AdicionaContato</servlet-name>
        <url-pattern>/adicionaContato</url-pattern>
    </servlet-mapping>
+   
 </web-app>
 
   

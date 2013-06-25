@@ -15,6 +15,4 @@ public class PrimeiraLogica implements Logica{
 		RequestDispatcher rd = req.getRequestDispatcher("/primeira-logica.jsp");
 		rd.forward(req, res);
 	}
-
-	
 }
