@@ -24,7 +24,7 @@
 				<a href="mailto:${contato.email}">${contato.email}</a>
 			</c:if>
 			<c:if test="${empty contato.email}">
-			<h6>Email não informado</h6>
+			<h6>Email não informadoss</h6>
 			</c:if>
 			</td>
 			<td>${contato.email}</td>
