@@ -15,9 +15,10 @@
 <!--cria o DAO-->
 <jsp:useBean id="dao" class="br.com.caelum.agenda.dao.ContatoDao"/>
 <hr>
-<table>
+<table border="1">
 	<c:forEach var="contato" items="${dao.lista }">
 		<tr>
+		
 			<td>${contato.nome}</td>
 			<td>
 			<c:if test="${not empty contato.email}">
@@ -33,9 +34,7 @@
 			<td>
 			<a href="mvc?logica=RemoveContatoLogic&id=${contato.id}">RemoveContato</a>
 			</td>
-			
 	</c:forEach>
-	
 </table>
 <hr>
 <c:import url="rodape.jsp"></c:import>
